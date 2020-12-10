@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="cars.css">
+    <title>Dan's Cars</title>
+</head>
+
+<body>
+
+<div id="buttons">
+    <h1>Dan's Car Outlet</h1>
+    <button id="btnHome"type="button">Home</button>
+    <button id="btnOrder"type="button">Order</button>
+    <button id="btnCat"type="button">Catalog</button>
+    <button id="btnCart"type="button">Cart</button>
+</div>
+<div id="Home">
+    <h1>About Us</h1>
+    <p>Here at Dans Car company we take pride in ensure that everyone finds the right car for them.  We want to make sure
+        that we stay in your budget and ensure all features that you desire are found in your next purchase.
+        We were founded in 2056 after aliens invaded and tried to take over the planet.  After that we decided that we
+        should not be so selfish, so we make our own cars and sell them for a reasonable price(was either this or Lorem Ipsum)</p>
+    <h2>Contact Us!</h2>
+    1234 Exmaple street
+    <br>(456)123-4567
+    <br>example@example.com
+</div>
+<div id="OrderCar">
+    <form id="CarOrderForm">
+        <fieldset>
+            <legend>Color</legend>
+            <input type="radio" name="color" id="red" checked="checked">
+            <label for="red">Red</label><br>
+            <input type="radio" name="color" id="blue">
+            <label for="blue">Blue</label><br>
+            <input type="radio" name="color" id="green">
+            <label for="green">Green</label><br>
+        </fieldset>
+        <fieldset>
+            <legend>Type</legend>
+            <input type="radio" name="type" id="Normal" checked="checked">
+            <label for="Normal">Normal</label><br>
+            <input type="radio" name="type" id="sport">
+            <label for="sport">Sport</label><br>
+            <input type="radio" name="type" id="Truck">
+            <label for="Truck">Truck</label><br>
+        </fieldset>
+        <br><br><br><br><br><br><br>
+        <label for="FName">First Name</label>
+        <input type="text" id="FName">
+        <label for="LName">Last Name</label>
+        <input type="text" id="LName">
+        <label for="spareTire">Include Spare Tire</label>
+        <input type="checkbox" id="spareTire">
+    </form>
+</div>
+<div id="Catalog">
+    <h1>Accessories</h1>
+    <fieldset>
+        <h3>Phone Holder:   $9.99</h3>
+
+        <label for="phoneHolder">Qty:</label>
+        <input type="number" name="type" id="phoneHolder">
+        <button id="btnPhone" type="button">Add</button>
+    </fieldset>
+    <fieldset>
+        <h3>Spoiler:   $99.99</h3>
+
+        <label for="Spoiler">Qty:</label>
+        <input type="number" name="type" id="Spoiler">
+        <button id="btnSpoiler"type="button">Add</button>
+    </fieldset>
+    <fieldset>
+        <h3>Subwoofers:   $199.99</h3>
+
+        <label for="Subwoofers">Qty:</label>
+        <input type="number" name="type" id="Subwoofers">
+        <button id="btnSub"type="button">Add</button>
+    </fieldset>
+    <fieldset>
+        <h3>Air Freshener:   $7.99</h3>
+
+        <label for="AirFreshener">Qty:</label>
+        <input type="number" name="type" id="AirFreshener">
+        <button id="btnFresh"type="button">Add</button>
+    </fieldset>
+    <fieldset>
+        <h3>Neon Lights:   $499.99</h3>
+
+        <label for="NeonLights">Qty:</label>
+        <input type="number" name="type" id="NeonLights">
+        <button id="btnNeon"type="button">Add</button>
+    </fieldset>
+
+
+
+
+</div>
+<div id="Cart">
+    <button id="btnDisplay"type="button">Display</button>
+</div>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src = "cars.js"></script>
+</body>
+</html>

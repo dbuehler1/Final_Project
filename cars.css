@@ -1,0 +1,33 @@
+body{
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color:midnightblue;
+    color: black;
+}
+h1{
+    color: white;
+    background-color:dimgrey;
+}
+div{
+    background-color: white;
+    height: auto;
+}
+button:hover{
+    background-color: midnightblue;
+    color: white;
+}
+button{
+    margin-right: auto;
+    margin-left: auto;
+    width: auto;
+}
+fieldset{
+    background-color: white;
+    color: black;
+    float: left;
+    width: 180px;
+}
+legend{
+    font-size: 16pt;
+    background-color: white;
+}
