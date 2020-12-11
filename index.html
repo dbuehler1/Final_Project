@@ -29,7 +29,7 @@
 <div id="OrderCar">
     <form id="CarOrderForm">
         <fieldset>
-            <legend>Color</legend>
+            <legend>*Color</legend>
             <input type="radio" name="color" id="red" checked="checked">
             <label for="red">Red</label><br>
             <input type="radio" name="color" id="blue">
@@ -38,7 +38,7 @@
             <label for="green">Green</label><br>
         </fieldset>
         <fieldset>
-            <legend>Type</legend>
+            <legend>*Type</legend>
             <input type="radio" name="type" id="Normal" checked="checked">
             <label for="Normal">Normal</label><br>
             <input type="radio" name="type" id="sport">
@@ -47,12 +47,15 @@
             <label for="Truck">Truck</label><br>
         </fieldset>
         <br><br><br><br><br><br><br>
-        <label for="FName">First Name</label>
+        <label for="FName">*First Name</label>
         <input type="text" id="FName">
-        <label for="LName">Last Name</label>
+        <label for="LName">*Last Name</label>
         <input type="text" id="LName">
-        <label for="spareTire">Include Spare Tire</label>
+        <label for="spareTire">Include Spare Tire? ($250)</label>
         <input type="checkbox" id="spareTire">
+        <button type="submit">Submit</button>
+        <div id="CarTotal"></div>
+        <div id="orderDesc"></div>
     </form>
 </div>
 <div id="Catalog">
@@ -62,45 +65,49 @@
 
         <label for="phoneHolder">Qty:</label>
         <input type="number" name="type" id="phoneHolder">
-        <button id="btnPhone" type="button">Add</button>
+        <button id="btnPhone" type="button" data-name="Phone Holder" data-price="9.99" >Add</button>
     </fieldset>
     <fieldset>
         <h3>Spoiler:   $99.99</h3>
 
         <label for="Spoiler">Qty:</label>
         <input type="number" name="type" id="Spoiler">
-        <button id="btnSpoiler"type="button">Add</button>
+        <button id="btnSpoiler"type="button" data-name="Spoiler" data-price="99.99">Add</button>
     </fieldset>
     <fieldset>
         <h3>Subwoofers:   $199.99</h3>
 
         <label for="Subwoofers">Qty:</label>
         <input type="number" name="type" id="Subwoofers">
-        <button id="btnSub"type="button">Add</button>
+        <button id="btnSub"type="button" data-name="Subwoofers" data-price="199.99">Add</button>
     </fieldset>
     <fieldset>
         <h3>Air Freshener:   $7.99</h3>
 
         <label for="AirFreshener">Qty:</label>
         <input type="number" name="type" id="AirFreshener">
-        <button id="btnFresh"type="button">Add</button>
+        <button id="btnFresh"type="button" data-name="Air Freshener" data-price="7.99">Add</button>
     </fieldset>
     <fieldset>
         <h3>Neon Lights:   $499.99</h3>
 
         <label for="NeonLights">Qty:</label>
         <input type="number" name="type" id="NeonLights">
-        <button id="btnNeon"type="button">Add</button>
+        <button id="btnNeon"type="button" data-name="Neon Headlights" data-price="499.99">Add</button>
     </fieldset>
-
+<span id="error"></span>
 
 
 
 </div>
 <div id="Cart">
+    <div id="CartItems"></div>
     <button id="btnDisplay"type="button">Display</button>
+    <button id="btnClear"type="button">Clear Cart</button>
+    <h2 id="total"></h2>
 </div>
 <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.js"></script>
 <script src = "cars.js"></script>
 </body>
 </html>
